@@ -1,18 +1,8 @@
 package VisitPlann.com;
 
-import androidx.annotation.NonNull;
-import androidx.camera.core.ImageAnalysis;
-import androidx.camera.core.ImageProxy;
-
-import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.util.Comparator;
-import java.util.List;
-
 import static android.graphics.ImageFormat.YUV_420_888;
 import static android.graphics.ImageFormat.YUV_422_888;
 import static android.graphics.ImageFormat.YUV_444_888;
-
 import static androidx.core.math.MathUtils.clamp;
 
 import android.content.Context;
@@ -20,8 +10,17 @@ import android.graphics.Bitmap;
 import android.graphics.ImageFormat;
 import android.os.Build;
 
+import androidx.annotation.NonNull;
+import androidx.camera.core.ImageAnalysis;
+import androidx.camera.core.ImageProxy;
+
 import org.tensorflow.lite.support.image.TensorImage;
 import org.tensorflow.lite.support.label.Category;
+
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.util.Comparator;
+import java.util.List;
 
 import VisitPlann.com.ml.Model;
 
